@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>PLANTAGOCHI</title> 
+    <title>PLANTAGOCHI</title>
     <style>
-        body 
-        {
-            background-color: {background_color};
+        body {
+            background-color: {{ background_color }};
         }
     </style>
-
 </head>
 <body>
     <h1>PLANTAGOCHI 🌿</h1>
-    <h2>Um produto revolucionário!</h2>
-    <img src="D:\Usuario\Documentos\UFJF\2023\2023.1\CEL082\templates\plantaimage.jpg" alt="Image">
+    <h2>Welcome to the Home Page</h2>
+    <h3>Uma nova maneira de cuidar de suas plantas 🌹🐝</h3>
+    <img src="D:\Usuario\Area de Trabalho\plantaimage.jpg" alt="Image">
+    <br>
+    <form action="/" method="POST">
+        <label for="color">Select Background Color:</label>
+        <select name="color" id="color">
+            <option value="#f2f2f2">Light Gray</option>
+            <option value="#ffffff">White</option>
+            <option value="#000000">Black</option>
+            <option value="#ff0000">Red</option>
+            <option value="#00ff00">Green</option>
+            <option value="#0000ff">Blue</option>
+        </select>
+        <input type="submit" value="Change Background">
+    </form>
     <br>
     <a href="/database"><button>Go to Database</button></a>
 </body>

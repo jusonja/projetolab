@@ -5,7 +5,7 @@ app = Flask(__name__)
 # Route for the home page
 @app.route('/')
 def home():
-    background_color = '#00ff00'  # Default background color
+    background_color = '0000ff'  # Default background color
     return render_template('home.html', background_color=background_color)
 
 
